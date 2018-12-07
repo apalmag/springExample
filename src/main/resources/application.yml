@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: sb-prueba-service  
+  
+server:
+  port: 1218
+  
+jwt:
+  secret: password
+ 
+#DETALLES DE LOGGING PARA ARCHIVOS Y NIVELES DE  ERROR#
+logging:
+  level:
+    root: WARN
+    mx.company.code : DEBUG    
+    org:
+      springframework:
+        security: WARN
+        web : ERROR
+        web.servlet.DispatcherServlet: WARN #FOR SPRING CLOUD SLEUTH    
+      hibernate: WARN        
+      apache:
+        commons:
+          dbcp2: WARN  
+  file: ${spring.application.name}.log
+  pattern:
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger [%file:%line] - %msg%n'
+    console: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){magenta} %clr(%-5level) %clr([%thread]){blue} %clr(%logger) %clr([%file:%line]) - %msg%n' 
+#"\u001b[35m %d{yyyy-MM-dd HH:mm:ss.SSS}\u001b[0m %-5level [%thread] %logger [%file:%line] - %msg%n"
+#'%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger [%file:%line] - %msg%n'
+#"%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){green} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
