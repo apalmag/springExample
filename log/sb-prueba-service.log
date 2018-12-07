@@ -1,0 +1,9 @@
+2018-12-07 16:50:20.536 INFO  [main] mx.company.code.Application [StartupInfoLogger.java:48] - Starting Application on APALMA-LAP with PID 14976 (B:\Proyectos\Prueba\JavaWorkSpace\mx.company.code\target\classes started by apalma in B:\Proyectos\Prueba\JavaWorkSpace\mx.company.code)
+2018-12-07 16:50:20.542 DEBUG [main] mx.company.code.Application [StartupInfoLogger.java:51] - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2018-12-07 16:50:20.543 INFO  [main] mx.company.code.Application [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2018-12-07 16:50:22.255 INFO  [main] mx.company.code.config.AppConfiguration [AppConfiguration.java:33] - Registrando validator para peticiones post.
+2018-12-07 16:50:22.265 INFO  [main] mx.company.code.config.AppConfiguration [AppConfiguration.java:34] - Message info
+2018-12-07 16:50:22.265 DEBUG [main] mx.company.code.config.AppConfiguration [AppConfiguration.java:35] - Message de debug
+2018-12-07 16:50:22.265 ERROR [main] mx.company.code.config.AppConfiguration [AppConfiguration.java:36] - log de erro
+2018-12-07 16:50:22.265 WARN  [main] mx.company.code.config.AppConfiguration [AppConfiguration.java:37] - log de warning
+2018-12-07 16:50:22.768 INFO  [main] mx.company.code.Application [StartupInfoLogger.java:57] - Started Application in 2.479 seconds (JVM running for 3.206)
